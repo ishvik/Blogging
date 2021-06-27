@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    
+}
+
+.main-container-editor{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    background-color: darkgray;
+}
+
+.menu-bar{
+    height: 8%;
+    width: 100%;
+    padding-left: 23%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+}
+
+.menu-selector{
+    background-color:darkslategray;
+    color: wheat;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.menu-selector:hover{
+    cursor: pointer;
+}
+
+#font-family{
+    margin-left: 5%;
+}
+
+#font-size{
+    margin-left: 2%;
+}
+
+.menu-icon{
+    height: 100%;
+    margin-left: 2%;
+    font-size: 2rem;
+    width: 3%;
+    border: 2px solid darkslategray;
+    padding-left: 0.3%;
+}
+
+.menu-icon:hover{
+    cursor: pointer;
+    background-color:darkslategray;
+    color: wheat;
+}
+
+#bold{
+    margin-left: 3%;
+    font-size: 2rem;
+}
+
+.alignment{
+    padding-top: 0.3%;
+}
+
+.selected{
+    background-color:darkslategray;
+    color: wheat;
+}
+
+.input-container{
+    width: 70%;
+    height: 75%;
+    margin-left: 15%;
+    margin-top: 1%;
+    border-radius: 50px;
+    background-color: #050416;
+    box-shadow: 1px 10px 10px black;
+    border: none;
+    padding: 2%;
+    color: antiquewhite;
+}
+
+#publishBtn,#back{
+    float: right;
+    height: 5%;
+    width: 6%;
+    margin-right: 3%;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: wheat;
+    border: none;
+    background-color: darkslategrey;
+}
+
+#back{
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+}
+
+#publishBtn:hover,#back:hover{
+    cursor: pointer;
+}
+
+.input{
+    color: antiquewhite;
+    width: 100%;
+    height: 90%;
+    background-color: #050416;
+    border: none;
+    padding-left: 4%;
+    padding-top: 5%;
+    font-size: 20px;
+    padding-right: 2%;
+}
+
+.input:focus{
+    border: none;
+}
+
+.heading-blog{
+    width: 60%;
+    height: 10%;
+    background: none;
+    border: none;
+    color: antiquewhite;
+    font-size: 30px;
+    outline: none;
+}
+
+.category{
+    width: 30%;
+    height: 10%;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: antiquewhite;
+    outline: none;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+  }

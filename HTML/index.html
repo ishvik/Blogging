@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="google-signin-client_id" content="883891786026-ar663ia9dgg7rmgtfg3c5kuvft70fagh.apps.googleusercontent.com">
+    <link rel="stylesheet" href="/Blogging Website/CSS/style.css" />
+    <link rel="stylesheet" href="/Blogging Website/CSS/editor.css"/>
+    <title>Blogging</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="left-navbar">
+                <div class="options" id="coding" style="width: 50%;">Coding</div>
+                <div class="options" id="food" style="width: 50%;">Food</div>
+            </div>
+            <div class="heading" style="font-size: 3rem; padding-right: 5%;">Express & Explore</div>
+            <div class="right-navbar">
+                <div class="options" id="travel" style="width: 30%;">Travel</div>
+                <div class="options" id="beauty" style="width: 30%; padding-left: 10%; ">Beauty</div>
+                <div class="options material-icons" id="write" style="width: 30%; padding-left: 20%;">create</div>
+
+            </div>
+            <div class="editor">Editor</div>
+        </div>
+        <div class="content">
+            <div class="image-content">
+                <div class="left-side"><img src="/Blogging Website/Images/coding.jpg"></div>
+                <div class="right-side">
+                    <div class="image"><img src="/Blogging Website/Images/travel.jpg"></div>
+                    <div class="image"><img src="/Blogging Website/Images/food.jpg"></div>
+                </div>
+            </div>
+            <div class="quotes">
+                "The first thing you learn when you’re <br> blogging is that people are one click away <br> from leaving
+                you. So you’ve got to get to <br>the point, you can’t waste people’s time,<br> you’ve got to give them
+                some value for their limited attention span."
+                <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ~ Alex Tabarrok
+            </div>
+        </div>
+        <div id="id02" class="modal">
+
+            <form class="modal-content animate" id="signupform">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="/Blogging Website/Images/contact.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Full Name</b></label>
+                    <input type="text" id="signName" placeholder="Enter Name" name="uname" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" id="signEmail" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="signPass1" name="psw" required>
+                    <button type="submit" id="signup">Sign Up</button>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                    <p>Have a account?<a id="log">Log In</a></p>
+                </div>
+            </form>
+        </div>
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="/Blogging Website/Images/contact.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Username" id="logName" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="logPass" name="psw" required>
+
+                    <button type="submit" id="login">Login</button>
+                    <p>Don't have a account?<a id="sign" style="cursor: pointer;">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main-container-editor">
+        <button id="back"><span class="material-icons">
+            arrow_back
+            </span></button>
+        <div class="menu-bar">
+            <select class="menu-selector" id="font-family">
+                <option style="font-family:Noto Sans" value="Noto Sans">Noto Sans</option>
+                <option style="font-family:Arial" value="Arial">Arial</option>
+                <option style="font-family:Calibri" value="Calibri">Calibri</option>
+                <option style="font-family:Comic Sans MS" value="Comic Sans MS">Comic Sans MS</option>
+                <option style="font-family:Courier New" value="Courier New">Courier New</option>
+                <option style="font-family:Impact" value="Impact">Impact</option>
+                <option style="font-family:Georgia" value="Georgia">Georgia</option>
+                <option style="font-family:Garamond" value="Garamond">Garamond</option>
+                <option style="font-family:Lato" value="Lato">Lato</option>
+                <option style="font-family:Open Sans" value="Open Sans">Open Sans</option>
+                <option style="font-family:Palatino" value="Palatino">Palatino</option>
+                <option style="font-family:Verdana" value="Verdana">Verdana</option>
+            </select>
+
+            <select class="menu-selector" id="font-size">
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14" selected>14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+            </select>
+            <button class="material-icons menu-icon" id="bold" style="font-size: 2rem;" data-command='bold'>format_bold</button>
+            <button class="material-icons menu-icon" id="italic" style="font-size: 2rem;" data-command='italic'>format_italic</button>
+            <button class="material-icons menu-icon" id="underlined" style="font-size: 2rem;" data-command='underline'>format_underlined</button>
+            <button class="material-icons menu-icon alignment selected" data-type="left" style="font-size: 1.5rem;" data-command='justifyLeft'>format_align_left</button>
+            <button class="material-icons menu-icon alignment" data-type="center" style="font-size: 1.5rem;" data-command='justifyCenter'>format_align_center</button>
+            <button class="material-icons menu-icon alignment" data-type="right" data-command='justifyRight'>format_align_right</button>
+            <button class="material-icons menu-icon" id="cut" data-command='cut'>content_cut</button>
+            <button class="material-icons menu-icon" id="copy" data-command='copy'>content_copy</button>
+            <button class="material-icons menu-icon" id="paste" data-command='paste'>content_paste</button>
+        </div>
+        <div class="input-container">
+            <input class="heading-blog" placeholder="Enter Heading..."/>
+            <input class="category" placeholder="Enter Category..."/>
+            <div class="input" contenteditable="true"></div>
+        </div>
+        <button type="submit" id="publishBtn">Publish</button>
+        <div class="loader-div">
+            <div class="loader"></div>
+        </div>
+        <div class="extra">extra</div>
+    </div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="/Blogging Website/JS/script.js"></script>
+</body>
+
+</html>
