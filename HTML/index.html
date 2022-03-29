@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="google-signin-client_id" content="883891786026-ar663ia9dgg7rmgtfg3c5kuvft70fagh.apps.googleusercontent.com">
-    <link rel="stylesheet" href="/Blogging Website/CSS/style.css" />
-    <link rel="stylesheet" href="/Blogging Website/CSS/editor.css"/>
+    <link rel="stylesheet" href="../CSS/editor.css" />
+    <link rel="stylesheet" href="../CSS/style.css"/>
     <title>Blogging</title>
 </head>
 
@@ -30,63 +30,18 @@
         </div>
         <div class="content">
             <div class="image-content">
-                <div class="left-side"><img src="/Blogging Website/Images/coding.jpg"></div>
+                <div class="left-side"><img src="../Images/coding.jpg"></div>
                 <div class="right-side">
-                    <div class="image"><img src="/Blogging Website/Images/travel.jpg"></div>
-                    <div class="image"><img src="/Blogging Website/Images/food.jpg"></div>
+                    <div class="image"><img src="../Images/travel.jpg"></div>
+                    <div class="image"><img src="../Images/food.jpg"></div>
                 </div>
             </div>
             <div class="quotes">
                 "The first thing you learn when you’re <br> blogging is that people are one click away <br> from leaving
                 you. So you’ve got to get to <br>the point, you can’t waste people’s time,<br> you’ve got to give them
-                some value for their limited attention span."
+                some value for their limited attention span"
                 <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ~ Alex Tabarrok
             </div>
-        </div>
-        <div id="id02" class="modal">
-
-            <form class="modal-content animate" id="signupform">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                    <img src="/Blogging Website/Images/contact.png" alt="Avatar" class="avatar">
-                </div>
-
-                <div class="container">
-                    <label for="uname"><b>Full Name</b></label>
-                    <input type="text" id="signName" placeholder="Enter Name" name="uname" required>
-
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" id="signEmail" name="email" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" id="signPass1" name="psw" required>
-                    <button type="submit" id="signup">Sign Up</button>
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                    <p>Have a account?<a id="log">Log In</a></p>
-                </div>
-            </form>
-        </div>
-        <div id="id01" class="modal">
-
-            <form class="modal-content animate">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                    <img src="/Blogging Website/Images/contact.png" alt="Avatar" class="avatar">
-                </div>
-
-                <div class="container">
-                    <label for="uname"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Username" id="logName" name="email" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" id="logPass" name="psw" required>
-
-                    <button type="submit" id="login">Login</button>
-                    <p>Don't have a account?<a id="sign" style="cursor: pointer;">Sign Up</a></p>
-                </div>
-            </form>
         </div>
     </div>
     <div class="main-container-editor">
@@ -142,10 +97,9 @@
         <div class="loader-div">
             <div class="loader"></div>
         </div>
-        <div class="extra">extra</div>
     </div>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="/Blogging Website/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
